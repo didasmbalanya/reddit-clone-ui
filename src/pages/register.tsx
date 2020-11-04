@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 import { Form, Formik } from "formik";
-import { Box, Button } from "@chakra-ui/core";
+import { Box, Button, Link } from "@chakra-ui/core";
 import { useRouter } from "next/router";
 
 import { Wrapper } from "../components/Wrapper";
@@ -62,9 +62,9 @@ const Register: React.FC<registerProps> = ({}) => {
         }}
       </Formik>
       <Box mt={10}>
-        <Link href="/login">
-          <a>already have an account? click here</a>
-        </Link>
+        <NextLink href="/login">
+          <Link>already have an account? click here</Link>
+        </NextLink>
       </Box>
     </Wrapper>
   );
